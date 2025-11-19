@@ -1,0 +1,92 @@
+/* Sydvolt – Skandinavisk ren design */
+:root{
+  --deep-blue:#0F2748;/* djup blå */
+  --soft-green:#2FA36B;/* mjuk grön */
+  --dark-gray:#1F2937;/* mörkgrå text */
+  --mid-gray:#4B5563;/* sekundär text */
+  --light:#FFFFFF;/* vit */
+  --bg:#F6F8FB;/* ljus bakgrund */
+  --border:#E5E7EB;/* kantlinjer */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  color:var(--dark-gray); background:var(--bg);
+}
+img{max-width:100%; display:block}
+.container{max-width:1100px; margin:0 auto; padding:0 20px}
+
+/* Header */
+.header{position:sticky; top:0; z-index:50; background:var(--light); border-bottom:1px solid var(--border);}
+.nav{display:flex; align-items:center; justify-content:space-between; height:64px}
+.brand{font-weight:800; letter-spacing:.5px; color:var(--deep-blue); font-size:1.15rem}
+.nav-links{display:flex; gap:22px; align-items:center}
+.nav-links a{color:var(--dark-gray); text-decoration:none; font-weight:600}
+.nav-links a:hover{color:var(--deep-blue)}
+.cta{background:var(--soft-green); color:#fff; padding:10px 16px; border-radius:10px; text-decoration:none; font-weight:700; box-shadow:0 6px 14px rgba(47,163,107,.18);}
+.cta:hover{filter:brightness(0.95)}
+
+.menu-btn{display:none; background:transparent; border:1px solid var(--border); padding:8px 10px; border-radius:10px}
+.menu-btn span{display:block; width:22px; height:2px; background:var(--dark-gray); margin:4px 0}
+.mobile{display:none}
+
+/* Hero */
+.hero{position:relative; overflow:hidden; background:var(--deep-blue); color:#fff}
+.hero .bg{position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat; filter:brightness(.65)}
+.hero .overlay{position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,39,72,.65), rgba(15,39,72,.75))}
+.hero .content{position:relative; padding:90px 0}
+.hero h1{font-size:2.4rem; line-height:1.15; margin:0 0 12px; font-weight:800}
+.hero p{color:#E5ECF5; font-size:1.1rem; max-width:680px}
+.hero .actions{display:flex; gap:12px; margin-top:22px}
+.btn-primary{background:#fff; color:var(--deep-blue); padding:12px 18px; border-radius:12px; text-decoration:none; font-weight:800}
+.btn-secondary{background:transparent; border:2px solid #fff; color:#fff; padding:10px 16px; border-radius:12px; text-decoration:none; font-weight:700}
+
+/* Sections */
+.section{padding:64px 0; background:transparent}
+.section.alt{background:#fff}
+.section h2{font-size:1.8rem; margin:0 0 10px; color:var(--deep-blue)}
+.section p.lead{color:var(--mid-gray); max-width:760px}
+.grid{display:grid; gap:22px}
+.grid.cols-4{grid-template-columns:repeat(4,1fr)}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.card{background:#fff; border:1px solid var(--border); border-radius:14px; padding:18px}
+.card h3{margin:8px 0 6px; color:var(--dark-gray)}
+.badge{display:inline-block; background:rgba(47,163,107,.12); color:var(--soft-green); padding:4px 10px; border-radius:999px; font-weight:700; font-size:.8rem}
+.spec{display:flex; justify-content:space-between; color:var(--mid-gray); font-size:.95rem; padding:6px 0; border-bottom:1px dashed var(--border)}
+.spec:last-child{border-bottom:none}
+
+/* Trustpilot placeholder */
+.trust{display:flex; gap:16px; align-items:center}
+.star{color:#10B981}
+
+/* Footer */
+.footer{background:#0E1F3C; color:#E7EFFA; padding:28px 0; margin-top:40px}
+.footer a{color:#ffffff; text-decoration:none}
+.footer small{color:#BFD3F5}
+
+/* Forms */
+form{background:#fff; border:1px solid var(--border); padding:18px; border-radius:14px}
+label{display:block; font-weight:700; color:var(--dark-gray); margin:10px 0 6px}
+input, select, textarea{width:100%; padding:12px 12px; border:1px solid var(--border); border-radius:10px; font-size:1rem; color:var(--dark-gray); background:#fff}
+textarea{min-height:120px}
+button.btn{background:var(--soft-green); color:#fff; padding:12px 16px; border:none; border-radius:12px; font-weight:800}
+.success{margin-top:12px; padding:12px; border-radius:10px; background:rgba(47,163,107,.1); color:var(--soft-green); display:none}
+
+/* Utilities */
+.center{text-align:center}
+.muted{color:var(--mid-gray)}
+.row{display:flex; gap:16px; align-items:center}
+.icon{width:22px; height:22px; border-radius:6px; background:var(--deep-blue); display:inline-flex; align-items:center; justify-content:center; color:#fff; font-weight:900}
+
+/* Responsive */
+@media (max-width: 900px){
+  .grid.cols-4{grid-template-columns:repeat(2,1fr)}
+  .grid.cols-3{grid-template-columns:repeat(1,1fr)}
+}
+@media (max-width: 760px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .mobile{display:block; border-top:1px solid var(--border); background:#fff}
+  .mobile a{display:block; padding:14px 20px; border-bottom:1px solid var(--border); text-decoration:none; color:var(--dark-gray); font-weight:600}
+}

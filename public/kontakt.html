@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt – Sydvolt | Få offert</title>
+  <meta name="description" content="Kontakta Sydvolt för offert på solceller och batterilagring. Snabb återkoppling och personlig rådgivning.">
+  <link rel="stylesheet" href="/public/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="/public/site.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Sydvolt</div>
+      <nav class="nav-links">
+        <a href="/public/index.html">Startsida</a>
+        <a href="/public/produkter.html">Produkter</a>
+        <a href="/public/om-oss.html">Om Sydvolt</a>
+        <a href="/public/kontakt.html">Kontakt</a>
+        <a class="cta" href="/public/boka.html">Boka</a>
+      </nav>
+      <button id="menuToggle" class="menu-btn" aria-label="Öppna meny"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileNav" class="mobile">
+      <a href="/public/index.html">Startsida</a>
+      <a href="/public/produkter.html">Produkter</a>
+      <a href="/public/om-oss.html">Om Sydvolt</a>
+      <a href="/public/kontakt.html">Kontakt</a>
+      <a href="/public/boka.html">Boka</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="bg"></div>
+    <div class="overlay"></div>
+    <div class="container content">
+      <span class="badge">Kontakt</span>
+      <h1>Få en kostnadsfri offert</h1>
+      <p>Fyll i formuläret så återkommer vi med prisförslag och energiberäkning för ditt tak.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid cols-3" style="grid-template-columns:2fr 1fr; gap:24px">
+        <div>
+          <form id="kontaktForm">
+            <label for="namn">Namn</label>
+            <input id="namn" name="namn" required>
+
+            <label for="tel">Telefonnummer</label>
+            <input id="tel" name="tel" required>
+
+            <label for="mail">E-post</label>
+            <input type="email" id="mail" name="mail" required>
+
+            <label for="adress">Adress</label>
+            <input id="adress" name="adress">
+
+            <label for="typ">Välj installation</label>
+            <select id="typ" name="typ">
+              <option>Solceller</option>
+              <option>Batteri</option>
+              <option>Båda</option>
+            </select>
+
+            <label for="msg">Meddelande</label>
+            <textarea id="msg" name="msg"></textarea>
+
+            <button class="btn" type="submit">Skicka</button>
+            <div id="kontaktSuccess" class="success">Tack! Sydvolt kontaktar dig inom kort.</div>
+          </form>
+        </div>
+        <div>
+          <div class="card">
+            <h3>Kontaktuppgifter</h3>
+            <p class="muted">info@sydvolt.se<br>+46 10 123 45 6</p>
+            <h3>Hitta oss</h3>
+            <p class="muted">Storgatan 12, 211 43 Malmö</p>
+            <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=900&auto=format&fit=crop" alt="Karta placeholder">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row" style="justify-content:space-between; align-items:flex-start">
+        <div>
+          <strong>Sydvolt</strong><br>
+          <small>Premium solenergi i Sverige</small>
+        </div>
+        <div>
+          <small>Kontakt</small><br>
+          <a href="mailto:info@sydvolt.se">info@sydvolt.se</a><br>
+          <a href="tel:+4610123456">+46 10 123 45 6</a>
+        </div>
+        <div>
+          <small>Adress</small><br>
+          <span>Storgatan 12, 211 43 Malmö</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

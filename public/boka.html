@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bokningsförfrågan – Sydvolt</title>
+  <meta name="description" content="Skicka en bokningsförfrågan till Sydvolt för kostnadsfri konsultation om solceller och batterilagring.">
+  <link rel="stylesheet" href="/public/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script defer src="/public/site.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Sydvolt</div>
+      <nav class="nav-links">
+        <a href="/public/index.html">Startsida</a>
+        <a href="/public/produkter.html">Produkter</a>
+        <a href="/public/om-oss.html">Om Sydvolt</a>
+        <a href="/public/kontakt.html">Kontakt</a>
+        <a class="cta" href="/public/boka.html">Boka</a>
+      </nav>
+      <button id="menuToggle" class="menu-btn" aria-label="Öppna meny"><span></span><span></span><span></span></button>
+    </div>
+    <div id="mobileNav" class="mobile">
+      <a href="/public/index.html">Startsida</a>
+      <a href="/public/produkter.html">Produkter</a>
+      <a href="/public/om-oss.html">Om Sydvolt</a>
+      <a href="/public/kontakt.html">Kontakt</a>
+      <a href="/public/boka.html">Boka</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="bg"></div>
+    <div class="overlay"></div>
+    <div class="container content">
+      <span class="badge">Boka</span>
+      <h1>Bokningsförfrågan</h1>
+      <p>Välj önskat datum och beskriv ditt intresse. Vi bekräftar tiden via e-post.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <form id="bokaForm">
+        <div class="grid cols-3" style="grid-template-columns:1fr 1fr; gap:16px">
+          <div>
+            <label for="bnamn">Namn</label>
+            <input id="bnamn" name="bnamn" required>
+          </div>
+          <div>
+            <label for="btel">Telefon</label>
+            <input id="btel" name="btel" required>
+          </div>
+          <div>
+            <label for="bmail">E-post</label>
+            <input type="email" id="bmail" name="bmail" required>
+          </div>
+          <div>
+            <label for="btime">Önskad dag/tid</label>
+            <input type="datetime-local" id="btime" name="btime">
+          </div>
+          <div>
+            <label for="bint">Installationsintresse</label>
+            <select id="bint" name="bint">
+              <option>Solceller</option>
+              <option>Batteri</option>
+              <option>Båda</option>
+            </select>
+          </div>
+          <div style="grid-column:1/-1">
+            <label for="bmsg">Meddelande</label>
+            <textarea id="bmsg" name="bmsg"></textarea>
+          </div>
+        </div>
+        <button class="btn" type="submit" style="margin-top:12px">Skicka</button>
+        <div id="bokaSuccess" class="success">Tack! Din bokningsförfrågan har skickats.</div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row" style="justify-content:space-between; align-items:flex-start">
+        <div>
+          <strong>Sydvolt</strong><br>
+          <small>Premium solenergi i Sverige</small>
+        </div>
+        <div>
+          <small>Kontakt</small><br>
+          <a href="mailto:info@sydvolt.se">info@sydvolt.se</a><br>
+          <a href="tel:+4610123456">+46 10 123 45 6</a>
+        </div>
+        <div>
+          <small>Adress</small><br>
+          <span>Storgatan 12, 211 43 Malmö</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
