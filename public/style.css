@@ -18,13 +18,13 @@ img{max-width:100%; display:block}
 .container{max-width:1100px; margin:0 auto; padding:0 20px}
 
 /* Header */
-.header{position:sticky; top:0; z-index:50; background:var(--light); border-bottom:1px solid var(--border);}
+.header{position:sticky; top:0; z-index:50; background:var(--light); border-bottom:1px solid var(--border);} 
 .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
 .brand{font-weight:800; letter-spacing:.5px; color:var(--deep-blue); font-size:1.15rem}
 .nav-links{display:flex; gap:22px; align-items:center}
 .nav-links a{color:var(--dark-gray); text-decoration:none; font-weight:600}
 .nav-links a:hover{color:var(--deep-blue)}
-.cta{background:var(--soft-green); color:#fff; padding:10px 16px; border-radius:10px; text-decoration:none; font-weight:700; box-shadow:0 6px 14px rgba(47,163,107,.18);}
+.cta{background:var(--soft-green); color:#fff; padding:10px 16px; border-radius:10px; text-decoration:none; font-weight:700; box-shadow:0 6px 14px rgba(47,163,107,.18);} 
 .cta:hover{filter:brightness(0.95)}
 
 .menu-btn{display:none; background:transparent; border:1px solid var(--border); padding:8px 10px; border-radius:10px}
@@ -34,7 +34,8 @@ img{max-width:100%; display:block}
 /* Hero */
 .hero{position:relative; overflow:hidden; background:var(--deep-blue); color:#fff}
 .hero .bg{position:absolute; inset:0; background:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat; filter:brightness(.65)}
-.hero .overlay{position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,39,72,.65), rgba(15,39,72,.75))}
+.hero .bg-video{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:brightness(.7)}
+.hero .overlay{position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,39,72,.55), rgba(15,39,72,.75))}
 .hero .content{position:relative; padding:90px 0}
 .hero h1{font-size:2.4rem; line-height:1.15; margin:0 0 12px; font-weight:800}
 .hero p{color:#E5ECF5; font-size:1.1rem; max-width:680px}

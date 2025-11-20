@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produkter – Sydvolt | Solpaneler och batterier</title>
-  <meta name="description" content="Utforska Sydvolts sortiment av solpaneler, växelriktare och batterilagring. Premiumkomponenter med lång garanti.">
+  <title>Produkter – Sydvolt | Solceller, batteri och värmepumpar</title>
+  <meta name="description" content="Utforska Sydvolts lösningar: solceller, batterilagring och värmepumpar. Så fungerar tekniken och hur den sänker dina kostnader.">
   <link rel="stylesheet" href="/public/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,83 +16,71 @@
     <div class="container nav">
       <div class="brand">Sydvolt</div>
       <nav class="nav-links">
-        <a href="/public/index.html">Startsida</a>
-        <a href="/public/produkter.html">Produkter</a>
-        <a href="/public/om-oss.html">Om Sydvolt</a>
-        <a href="/public/kontakt.html">Kontakt</a>
-        <a class="cta" href="/public/boka.html">Boka</a>
+        <a href="/index.html">Startsida</a>
+        <a href="/produkter.html">Produkter</a>
+        <a href="/om-oss.html">Om Sydvolt</a>
+        <a href="/kontakt.html">Kontakt</a>
+        <a class="cta" href="/boka.html">Boka</a>
       </nav>
       <button id="menuToggle" class="menu-btn" aria-label="Öppna meny"><span></span><span></span><span></span></button>
     </div>
     <div id="mobileNav" class="mobile">
-      <a href="/public/index.html">Startsida</a>
-      <a href="/public/produkter.html">Produkter</a>
-      <a href="/public/om-oss.html">Om Sydvolt</a>
-      <a href="/public/kontakt.html">Kontakt</a>
-      <a href="/public/boka.html">Boka</a>
+      <a href="/index.html">Startsida</a>
+      <a href="/produkter.html">Produkter</a>
+      <a href="/om-oss.html">Om Sydvolt</a>
+      <a href="/kontakt.html">Kontakt</a>
+      <a href="/boka.html">Boka</a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="bg"></div>
+    <video class="bg-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1920&auto=format&fit=crop">
+      <source src="https://videos.pexels.com/video-files/855296/855296-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    </video>
     <div class="overlay"></div>
     <div class="container content">
       <span class="badge">Sortiment</span>
-      <h1>Produkter</h1>
-      <p>Vi väljer komponenter med hög prestanda, lång livslängd och säkra garantier. Här är ett urval av våra rekommenderade produkter.</p>
+      <h1>Produkter och lösningar</h1>
+      <p>I stället för prislistor fokuserar vi på vad som passar dig bäst. Boka konsultation eller få offert – vi räknar på dina förutsättningar.</p>
     </div>
   </section>
 
-  <section class="section alt">
+  <section id="solceller" class="section alt">
     <div class="container">
-      <h2>Solpaneler</h2>
-      <p class="lead">Monokristallina paneler med hög verkningsgrad och snygg svart design.</p>
+      <h2>Solceller – egen solproduktion</h2>
+      <p class="lead">Solceller genererar el dagtid så att du köper in mindre kWh. Resultatet är lägre elkostnad och högre självförsörjning.</p>
       <div class="grid cols-3" style="margin-top:16px">
-        <div class="card">
-          <h3>Mono Black 400 W</h3>
-          <div class="spec"><span>Verkningsgrad</span><span>20,5%</span></div>
-          <div class="spec"><span>Mått</span><span>1722×1134 mm</span></div>
-          <div class="spec"><span>Garanti</span><span>25 år effekt</span></div>
-          <a class="cta" href="/public/kontakt.html" style="margin-top:12px; display:inline-block">Få offert</a>
-        </div>
-        <div class="card">
-          <h3>Mono Pro 420 W</h3>
-          <div class="spec"><span>Verkningsgrad</span><span>21,1%</span></div>
-          <div class="spec"><span>Mått</span><span>1762×1134 mm</span></div>
-          <div class="spec"><span>Garanti</span><span>25/25 år</span></div>
-          <a class="cta" href="/public/kontakt.html" style="margin-top:12px; display:inline-block">Få offert</a>
-        </div>
-        <div class="card">
-          <h3>Full Black 450 W</h3>
-          <div class="spec"><span>Verkningsgrad</span><span>21,5%</span></div>
-          <div class="spec"><span>Mått</span><span>1909×1134 mm</span></div>
-          <div class="spec"><span>Garanti</span><span>30 år effekt</span></div>
-          <a class="cta" href="/public/kontakt.html" style="margin-top:12px; display:inline-block">Få offert</a>
-        </div>
+        <div class="card"><h3>Hur det fungerar</h3><p class="muted">Panelerna omvandlar solljus till likström som växelriktaren gör om till växelström för huset. Överskott kan säljas eller lagras i batteri.</p></div>
+        <div class="card"><h3>Fördelar</h3><p class="muted">Minskar inköp av el, skydd mot prisvariationer och höjer fastighetsvärdet.</p></div>
+        <div class="card"><h3>Passar för</h3><p class="muted">Villor, BRF och företag med tak- eller markyta i bra väderstreck.</p></div>
       </div>
+      <a class="btn-primary" href="/kontakt.html" style="margin-top:16px; display:inline-block">Få offert</a>
     </div>
   </section>
 
-  <section class="section">
+  <section id="batteri" class="section">
     <div class="container">
-      <h2>Solcellsbatterier</h2>
-      <p class="lead">Trygg lagring som ökar egenanvändningen och ger backup.</p>
+      <h2>Batterilagring – smart energianvändning</h2>
+      <p class="lead">Lagra solel när produktionen är hög och använd den när elpriset eller förbrukningen är högre. Ger även backup vid avbrott.</p>
       <div class="grid cols-3" style="margin-top:16px">
-        <div class="card"><h3>Home 5 kWh</h3><div class="spec"><span>Kapacitet</span><span>5,1 kWh</span></div><div class="spec"><span>Garanti</span><span>10 år</span></div><a class="cta" href="/public/kontakt.html" style="margin-top:12px; display:inline-block">Få offert</a></div>
-        <div class="card"><h3>Home 10 kWh</h3><div class="spec"><span>Kapacitet</span><span>10,2 kWh</span></div><div class="spec"><span>Garanti</span><span>10 år</span></div><a class="cta" href="/public/kontakt.html" style="margin-top:12px; display:inline-block">Få offert</a></div>
-        <div class="card"><h3>Business 30 kWh</h3><div class="spec"><span>Kapacitet</span><span>30,6 kWh</span></div><div class="spec"><span>Garanti</span><span>10 år</span></div><a class="cta" href="/public/kontakt.html" style="margin-top:12px; display:inline-block">Få offert</a></div>
+        <div class="card"><h3>Hur det fungerar</h3><p class="muted">Överskottsel laddar batteriet. Energin används senare automatiskt eller styrs via app för att optimera kostnaden.</p></div>
+        <div class="card"><h3>Fördelar</h3><p class="muted">Ökar egenanvändningen, minskar effekttoppar och ger reservkraft.</p></div>
+        <div class="card"><h3>Integration</h3><p class="muted">Sömlös drift med växelriktaren och stöd för lastbalansering, laddbox m.m.</p></div>
       </div>
+      <a class="btn-primary" href="/boka.html" style="margin-top:16px; display:inline-block">Boka konsultation</a>
     </div>
   </section>
 
-  <section class="section alt">
+  <section id="varmepumpar" class="section alt">
     <div class="container">
-      <h2>FAQ om produkter</h2>
-      <div class="grid cols-3">
-        <div class="card"><h3>Hur lång garanti ingår?</h3><p class="muted">Vanligen 25–30 år på effekt för paneler och 10 år på batteri.</p></div>
-        <div class="card"><h3>Passar panelerna mitt tak?</h3><p class="muted">Vi projekterar efter taktyp, lutning och skuggning för bästa resultat.</p></div>
-        <div class="card"><h3>Behöver jag bygglov?</h3><p class="muted">Oftast inte. Vi hjälper vid behov med anmälan till kommunen.</p></div>
+      <h2>Värmepumpar – värme och kyla året runt</h2>
+      <p class="lead">Med en modern värmepump får du effektiv uppvärmning och komfortkyla på sommaren – vilket kan sänka energikostnaderna rejält.</p>
+      <div class="grid cols-3" style="margin-top:16px">
+        <div class="card"><h3>Hur det fungerar</h3><p class="muted">Värmepumpen flyttar energi mellan inom- och utomhusluft eller mark och levererar flera gånger mer värme än den förbrukar i el.</p></div>
+        <div class="card"><h3>Typer</h3><p class="muted">Luft/luft, luft/vatten och bergvärme – vi hjälper dig att välja rätt.</p></div>
+        <div class="card"><h3>Fördelar</h3><p class="muted">Lägre uppvärmningskostnad, behagligt inomhusklimat och möjlighet till kyla.</p></div>
       </div>
+      <a class="btn-primary" href="/kontakt.html" style="margin-top:16px; display:inline-block">Få offert</a>
     </div>
   </section>
 

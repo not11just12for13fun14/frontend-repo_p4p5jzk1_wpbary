@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt – Sydvolt | Få offert</title>
-  <meta name="description" content="Kontakta Sydvolt för offert på solceller och batterilagring. Snabb återkoppling och personlig rådgivning.">
+  <meta name="description" content="Kontakta Sydvolt för offert på solceller, batterilagring och värmepumpar. Snabb återkoppling och personlig rådgivning.">
   <link rel="stylesheet" href="/public/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,30 +16,32 @@
     <div class="container nav">
       <div class="brand">Sydvolt</div>
       <nav class="nav-links">
-        <a href="/public/index.html">Startsida</a>
-        <a href="/public/produkter.html">Produkter</a>
-        <a href="/public/om-oss.html">Om Sydvolt</a>
-        <a href="/public/kontakt.html">Kontakt</a>
-        <a class="cta" href="/public/boka.html">Boka</a>
+        <a href="/index.html">Startsida</a>
+        <a href="/produkter.html">Produkter</a>
+        <a href="/om-oss.html">Om Sydvolt</a>
+        <a href="/kontakt.html">Kontakt</a>
+        <a class="cta" href="/boka.html">Boka</a>
       </nav>
       <button id="menuToggle" class="menu-btn" aria-label="Öppna meny"><span></span><span></span><span></span></button>
     </div>
     <div id="mobileNav" class="mobile">
-      <a href="/public/index.html">Startsida</a>
-      <a href="/public/produkter.html">Produkter</a>
-      <a href="/public/om-oss.html">Om Sydvolt</a>
-      <a href="/public/kontakt.html">Kontakt</a>
-      <a href="/public/boka.html">Boka</a>
+      <a href="/index.html">Startsida</a>
+      <a href="/produkter.html">Produkter</a>
+      <a href="/om-oss.html">Om Sydvolt</a>
+      <a href="/kontakt.html">Kontakt</a>
+      <a href="/boka.html">Boka</a>
     </div>
   </header>
 
   <section class="hero">
-    <div class="bg"></div>
+    <video class="bg-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1920&auto=format&fit=crop">
+      <source src="https://videos.pexels.com/video-files/855296/855296-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    </video>
     <div class="overlay"></div>
     <div class="container content">
       <span class="badge">Kontakt</span>
       <h1>Få en kostnadsfri offert</h1>
-      <p>Fyll i formuläret så återkommer vi med prisförslag och energiberäkning för ditt tak.</p>
+      <p>Fyll i formuläret så återkommer vi med förslag och energiberäkning för ditt tak.</p>
     </div>
   </section>
 
@@ -64,11 +66,12 @@
             <select id="typ" name="typ">
               <option>Solceller</option>
               <option>Batteri</option>
-              <option>Båda</option>
+              <option>Värmepump</option>
+              <option>Solceller + Batteri</option>
             </select>
 
             <label for="msg">Meddelande</label>
-            <textarea id="msg" name="msg"></textarea>
+            <textarea id="msg" name="msg" placeholder="Berätta kort om taktyp, elanvändning och mål"></textarea>
 
             <button class="btn" type="submit">Skicka</button>
             <div id="kontaktSuccess" class="success">Tack! Sydvolt kontaktar dig inom kort.</div>
