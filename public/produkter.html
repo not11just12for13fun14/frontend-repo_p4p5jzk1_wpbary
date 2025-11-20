@@ -4,12 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Produkter – Sydvolt | Solceller, batteri och värmepumpar</title>
-  <meta name="description" content="Utforska Sydvolts lösningar: solceller, batterilagring och värmepumpar. Så fungerar tekniken och hur den sänker dina kostnader.">
+  <meta name="description" content="Utforska Sydvolts lösningar: solceller, batterilagring och värmepumpar. Se funktion, fördelar och inspirerande bilder från verkliga installationer.">
   <link rel="stylesheet" href="/public/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script defer src="/public/site.js"></script>
+  <style>
+    /* Lätt modern touch specifikt för denna sida – håller oss inom befintligt ramverk */
+    .feature { display:grid; grid-template-columns: 1.1fr 0.9fr; gap:32px; align-items:center; }
+    .feature.reverse { grid-template-columns: 0.9fr 1.1fr; }
+    .media { position:relative; }
+    .media img, .media video { width:100%; height:100%; object-fit:cover; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,0.12); }
+    .chiprow { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+    .chip { background:rgba(0,0,0,0.06); color:#0a0a0a; padding:6px 10px; border-radius:999px; font-size:12px; }
+    .gallery { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:14px; }
+    .gallery img { width:100%; height:120px; object-fit:cover; border-radius:10px; filter:saturate(1.05); }
+    .feature h2 { margin-bottom:6px; }
+    .feature .lead { margin-bottom:10px; }
+
+    @media (max-width: 900px){
+      .feature, .feature.reverse { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -41,46 +58,103 @@
     <div class="container content">
       <span class="badge">Sortiment</span>
       <h1>Produkter och lösningar</h1>
-      <p>I stället för prislistor fokuserar vi på vad som passar dig bäst. Boka konsultation eller få offert – vi räknar på dina förutsättningar.</p>
+      <p>Premiuminstallationer för effektiv energianvändning – skräddarsytt för din fastighet. Boka konsultation eller få offert.</p>
     </div>
   </section>
 
+  <!-- Solceller -->
   <section id="solceller" class="section alt">
-    <div class="container">
-      <h2>Solceller – egen solproduktion</h2>
-      <p class="lead">Solceller genererar el dagtid så att du köper in mindre kWh. Resultatet är lägre elkostnad och högre självförsörjning.</p>
-      <div class="grid cols-3" style="margin-top:16px">
-        <div class="card"><h3>Hur det fungerar</h3><p class="muted">Panelerna omvandlar solljus till likström som växelriktaren gör om till växelström för huset. Överskott kan säljas eller lagras i batteri.</p></div>
-        <div class="card"><h3>Fördelar</h3><p class="muted">Minskar inköp av el, skydd mot prisvariationer och höjer fastighetsvärdet.</p></div>
-        <div class="card"><h3>Passar för</h3><p class="muted">Villor, BRF och företag med tak- eller markyta i bra väderstreck.</p></div>
+    <div class="container feature">
+      <div>
+        <h2>Solceller – egenproducerad el</h2>
+        <p class="lead">Minska inköpt el och öka din självförsörjning. Våra paneler och växelriktare dimensioneras för just dina behov.</p>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card"><h3>Hur det fungerar</h3><p class="muted">Panelerna omvandlar solljus till el. Växelriktaren anpassar för hushållets användning, överskott kan säljas eller lagras.</p></div>
+          <div class="card"><h3>Fördelar</h3><p class="muted">Lägre elkostnader, bättre kontroll och höjt fastighetsvärde.</p></div>
+          <div class="card"><h3>Passar för</h3><p class="muted">Villor, BRF och företag med goda takytor i rätt väderstreck.</p></div>
+        </div>
+        <div class="chiprow">
+          <span class="chip">Monokristallint</span>
+          <span class="chip">Svarta helsvarta paneler</span>
+          <span class="chip">Optimerare vid skugga</span>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn-primary" href="/kontakt.html">Få offert</a>
+          <a class="btn" href="/boka.html">Boka konsultation</a>
+        </div>
       </div>
-      <a class="btn-primary" href="/kontakt.html" style="margin-top:16px; display:inline-block">Få offert</a>
+      <div class="media">
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop" alt="Solpaneler på villatak i solnedgång">
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop" alt="Närbild på solceller">
+          <img src="https://images.unsplash.com/photo-1519906193555-b379ccaa9714?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxNb250YWdlJTIwYXYlMjBwYW5lbGVyfGVufDB8MHx8fDE3NjM2NTU5MjB8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Montage av paneler">
+          <img src="https://images.unsplash.com/photo-1497449493050-aad1e7cad165?q=80&w=800&auto=format&fit=crop" alt="Tak med solcellsinstallation">
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Batterilagring -->
   <section id="batteri" class="section">
-    <div class="container">
-      <h2>Batterilagring – smart energianvändning</h2>
-      <p class="lead">Lagra solel när produktionen är hög och använd den när elpriset eller förbrukningen är högre. Ger även backup vid avbrott.</p>
-      <div class="grid cols-3" style="margin-top:16px">
-        <div class="card"><h3>Hur det fungerar</h3><p class="muted">Överskottsel laddar batteriet. Energin används senare automatiskt eller styrs via app för att optimera kostnaden.</p></div>
-        <div class="card"><h3>Fördelar</h3><p class="muted">Ökar egenanvändningen, minskar effekttoppar och ger reservkraft.</p></div>
-        <div class="card"><h3>Integration</h3><p class="muted">Sömlös drift med växelriktaren och stöd för lastbalansering, laddbox m.m.</p></div>
+    <div class="container feature reverse">
+      <div class="media">
+        <img src="https://images.unsplash.com/photo-1645639416550-26ac4bf20626?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxFbmVyZ2lsYWdyaW5nc2JhdHRlcmklMjBpJTIwdGVrbmlrcnVtfGVufDB8MHx8fDE3NjM2NTU5MjF8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Energilagringsbatteri i teknikrum">
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?q=80&w=800&auto=format&fit=crop" alt="Batterimoduler">
+          <img src="https://images.unsplash.com/photo-1554475901-4538ddfbccc2?q=80&w=800&auto=format&fit=crop" alt="Styrning via app">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Elektrisk distribution">
+        </div>
       </div>
-      <a class="btn-primary" href="/boka.html" style="margin-top:16px; display:inline-block">Boka konsultation</a>
+      <div>
+        <h2>Batterilagring – smartare användning</h2>
+        <p class="lead">Lagra solel när produktionen är hög och använd den när priset eller förbrukningen är högre. Ger även trygg backup.</p>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card"><h3>Hur det fungerar</h3><p class="muted">Överskott laddar batteriet. Energin nyttjas senare automatiskt eller via appstyrning för lägre kostnad.</p></div>
+          <div class="card"><h3>Fördelar</h3><p class="muted">Ökar egenanvändningen, minskar effekttoppar och ger reservkraft vid avbrott.</p></div>
+          <div class="card"><h3>Integration</h3><p class="muted">Sömlös drift med växelriktaren. Stöd för lastbalansering och laddbox.</p></div>
+        </div>
+        <div class="chiprow">
+          <span class="chip">10–20 kWh</span>
+          <span class="chip">Appstyrning</span>
+          <span class="chip">Backup-läge</span>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn-primary" href="/boka.html">Boka konsultation</a>
+          <a class="btn" href="/kontakt.html">Få offert</a>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Värmepumpar -->
   <section id="varmepumpar" class="section alt">
-    <div class="container">
-      <h2>Värmepumpar – värme och kyla året runt</h2>
-      <p class="lead">Med en modern värmepump får du effektiv uppvärmning och komfortkyla på sommaren – vilket kan sänka energikostnaderna rejält.</p>
-      <div class="grid cols-3" style="margin-top:16px">
-        <div class="card"><h3>Hur det fungerar</h3><p class="muted">Värmepumpen flyttar energi mellan inom- och utomhusluft eller mark och levererar flera gånger mer värme än den förbrukar i el.</p></div>
-        <div class="card"><h3>Typer</h3><p class="muted">Luft/luft, luft/vatten och bergvärme – vi hjälper dig att välja rätt.</p></div>
-        <div class="card"><h3>Fördelar</h3><p class="muted">Lägre uppvärmningskostnad, behagligt inomhusklimat och möjlighet till kyla.</p></div>
+    <div class="container feature">
+      <div>
+        <h2>Värmepumpar – komfort året runt</h2>
+        <p class="lead">Effektiv uppvärmning och skön kyla på sommaren. Vi hjälper dig välja rätt mellan luft/luft, luft/vatten och bergvärme.</p>
+        <div class="grid cols-3" style="margin-top:12px">
+          <div class="card"><h3>Hur det fungerar</h3><p class="muted">Flyttar energi mellan ute- och inneluft eller mark. Levererar fler kWh värme än elen som förbrukas.</p></div>
+          <div class="card"><h3>Typer</h3><p class="muted">Luft/luft för snabb komfort, luft/vatten för central uppvärmning, bergvärme för högsta verkningsgrad.</p></div>
+          <div class="card"><h3>Fördelar</h3><p class="muted">Sänker uppvärmningskostnad, förbättrar inomhusklimat och kan ge kyla.</p></div>
+        </div>
+        <div class="chiprow">
+          <span class="chip">SCOP > 4</span>
+          <span class="chip">Tyst drift</span>
+          <span class="chip">Kyla sommartid</span>
+        </div>
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+          <a class="btn-primary" href="/kontakt.html">Få offert</a>
+          <a class="btn" href="/boka.html">Boka konsultation</a>
+        </div>
       </div>
-      <a class="btn-primary" href="/kontakt.html" style="margin-top:16px; display:inline-block">Få offert</a>
+      <div class="media">
+        <img src="https://images.unsplash.com/photo-1586657730293-81043373803d?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHx2JUMzJUE0cm1lcHVtcHNpbnN0YWxsYXRpb258ZW58MHwwfHx8MTc2MzY1NTkyMXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Modern värmepumpsinstallation">
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1617093727343-374698b53b8e?q=80&w=800&auto=format&fit=crop" alt="Innedel värmepump">
+          <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800&auto=format&fit=crop" alt="Teknikrum med rördragning">
+          <img src="https://images.unsplash.com/photo-1642920581947-177d775c0c12?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxVdG9taHVzZGVsJTIwcCVDMyVBNSUyMGZhc2FkfGVufDB8MHx8fDE3NjM2NTU5MjN8MA&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="Utomhusdel på fasad">
+        </div>
+      </div>
     </div>
   </section>
 

@@ -3,14 +3,14 @@
 > vite
 
 
-  VITE v5.4.20  ready in 240 ms
+  VITE v5.4.20  ready in 207 ms
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.20.120.69:3000/
 Files in the public directory are served at the root path.
-Instead of /public/produkter.html, use /produkter.html.
-Files in the public directory are served at the root path.
 Instead of /public/index.html, use /index.html.
+Files in the public directory are served at the root path.
+Instead of /public/produkter.html, use /produkter.html.
 Files in the public directory are served at the root path.
 Instead of /public/style.css, use /style.css.
 Files in the public directory are served at the root path.
